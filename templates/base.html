@@ -14,24 +14,9 @@
 </head>
 
 <body style="background-color: rgb(185, 245, 245);">
-    <div class="bg"></div>
 
-    <!---LOGO-->
-    <div class="container-fluid" style="margin-top: 1rem;">
-        <nav class="navbar navbar-light" style="background-color: #DBF0F0;">
+    {% include 'navbar.html' %}
 
-            <a class="navbar-brand" href="/">
-                <img src="{% static 'images/logo.png' %}" width="110" height="110" class="d-inline-block align-top"
-                    alt="" loading="lazy">
-            </a>
-            <div style="margin:0 100mm 0 auto; color:#967FF4">
-                <h1>Ch. Chhabil Dass Public School</h1>
-            </div>
-        </nav>
-    </div>
-
-
-    
     {% block content %}
     {% endblock %}
 
